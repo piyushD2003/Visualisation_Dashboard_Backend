@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-xzj!#2jlx(rqu179(iscl1pizppa+(pe0z)itniy_!i#9t1omh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app", "127.0.0.1"]
 
 
 # Application definition
@@ -125,11 +125,11 @@ WSGI_APPLICATION = 'visualisation_dashboard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Blackcoffer',  # Replace with your actual database name
-        'USER': 'postgres',  # Replace with your actual username
-        'PASSWORD': '123456',  # Leave this empty
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'HOST': config('DB_HOST'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'PORT': config('DB_PORT')
     }
 }
 # Password validation
