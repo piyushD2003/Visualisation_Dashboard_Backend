@@ -9,6 +9,7 @@ django-cors-headers==4.6.0
 django-filter==24.3
 djangorestframework==3.15.2
 djangorestframework_simplejwt==5.4.0
+googleapis-common-protos==1.69.2
 grpcio==1.69.0
 grpcio-status==1.69.0
 httplib2==0.22.0
@@ -21,10 +22,13 @@ pyasn1_modules==0.4.1
 pydantic==2.10.4
 pydantic_core==2.27.2
 PyJWT==2.10.1
+pymongo==3.11.4
 pyparsing==3.2.1
 python-decouple==3.8
+pytz==2025.1
 requests==2.32.3
 rsa==4.9
+setuptools==77.0.3
 sqlparse==0.5.3
 tqdm==4.67.1
 typing_extensions==4.12.2
