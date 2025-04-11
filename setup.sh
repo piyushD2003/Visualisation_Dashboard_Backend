@@ -1,12 +1,11 @@
 #!/bin/bash
 
-#install dependancies
-pip install setuptools
+# install dependencies
 pip install -r requirements.txt
 
-# run django command
-python manage.py makemigrations
-python manage.py migrate
-python manage.py runserver
+# apply migrations
+python manage.py makemigrations --noinput
+python manage.py migrate --noinput
 
-
+# collect static files for Vercel to serve
+python manage.py collectstatic --noinput
