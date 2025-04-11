@@ -79,7 +79,7 @@ ROOT_URLCONF = 'visualisation_dashboard.urls'
 
 # CROSS HEADER Connection
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_ORIGINS = ("http://localhost:5173", "http://localhost:3001", "http://127.0.0.1:8000", "http://localhost:8001","https://visualisation-dashboard-backend.vercel.app") # noqa
+CORS_ALLOWED_ORIGINS = ("http://localhost:5173", "http://localhost:3001", "http://127.0.0.1:8000", "http://localhost:8001","https://visualisation-dashboard-frontend-xi.vercel.app/") # noqa
 CORS_ALLOW_METHODS = ['DELETE', 'GET', 'OPTIONS', 'PATCH', 'POST', 'PUT']
 CORS_ALLOW_HEADERS = [
     'accept',
